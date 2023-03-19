@@ -1,13 +1,6 @@
 import Header from "@/components/Header";
+import NavBar from "@/components/NavBar";
 import "./globals.css";
-// import { Creepster } from "../app/fonts";
-
-// const creep = Creepster({
-// 	subsets: ["latin"],
-// 	weight: "400",
-// 	display: "swap",
-// 	variable: "--font-creep",
-// });
 
 export const metadata = {
 	title: "Create Next App",
@@ -19,6 +12,7 @@ export default function RootLayout({ children }) {
 		<html lang="en">
 			<body>
 				<Header />
+				<NavBar />
 				{children}
 			</body>
 		</html>

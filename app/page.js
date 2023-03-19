@@ -1,8 +1,10 @@
 import Image from "next/image";
-import { Inter } from "next/font/google";
-
-const inter = Inter({ subsets: ["latin"] });
+import Carousel from "@/components/Carousel";
 
 export default function Home() {
-	return <main>hello</main>;
+	return (
+		<main>
+			<Carousel />
+		</main>
+	);
 }
