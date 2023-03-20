@@ -49,16 +49,18 @@ const Random = () => {
 				Pick a Random Character
 			</button>
 			{chars && (
-				<div className="grid grid-cols-1 py-4 my-4 space-y-2 text-lg border-4 rounded-lg sm:space-y-3 sm:border-8 sm:text-lg justify-items-center text-navy border-navy">
+				<div className="grid grid-cols-1 py-4 my-4 space-y-2 text-base border-4 rounded-lg sm:space-y-3 sm:border-8 justify-items-center text-navy border-navy sm:text-lg">
 					<Image
 						src={chars.image}
 						width={300}
 						height={300}
-						className="ml-8 mr-8 sm:ml-14 sm:mr-14"
+						className="ml-6 mr-6 sm:ml-14 sm:mr-14"
 						alt={chars.name}
 					/>
-					<h2 className={`${creep.className} text-3xl`}>{chars.name}</h2>
-					<h2>{chars.species}</h2>
+					<h2 className={`${creep.className} text-2xl sm:text-3xl`}>
+						{chars.name}
+					</h2>
+					<h2 className="">{chars.species}</h2>
 					<h2>{chars.type}</h2>
 					<h2>From {chars.location.name}</h2>
 				</div>
